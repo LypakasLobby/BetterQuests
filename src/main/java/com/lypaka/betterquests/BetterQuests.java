@@ -14,6 +14,12 @@ public class BetterQuests {
     public static Logger logger = LogManager.getLogger(MOD_NAME);
     public static BasicConfigManager configManager;
 
+    // TODO
+    // 1) Create questlines that will hold quests
+    // 2) Create quests that will store tasks players need to complete
+    // 3) Update progress numbers for quest completion
+    // 4) Reward pool for quest and questline completion
+
     public BetterQuests() {
 
 
