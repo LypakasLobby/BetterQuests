@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Quest {
 
+    private final String questName;
     private final int amountRequired;
     private final List<String> completionCommands;
     private final int progressNumberUpdate;
@@ -14,8 +15,9 @@ public class Quest {
     private final QuestTrigger questTrigger;
     private final QuestRequirement requirements;
 
-    public Quest (int amountRequired, List<String> completionCommands, int progressNumberUpdate, QuestInfoDisplay infoDisplay, String event, String targetID, String targetLocation, QuestTrigger questTrigger, QuestRequirement requirements) {
+    public Quest (String questName, int amountRequired, List<String> completionCommands, int progressNumberUpdate, QuestInfoDisplay infoDisplay, String event, String targetID, String targetLocation, QuestTrigger questTrigger, QuestRequirement requirements) {
 
+        this.questName = questName;
         this.amountRequired = amountRequired;
         this.completionCommands = completionCommands;
         this.progressNumberUpdate = progressNumberUpdate;
@@ -25,6 +27,12 @@ public class Quest {
         this.targetLocation = targetLocation;
         this.questTrigger = questTrigger;
         this.requirements = requirements;
+
+    }
+
+    public String getQuestName() {
+
+        return this.questName;
 
     }
 

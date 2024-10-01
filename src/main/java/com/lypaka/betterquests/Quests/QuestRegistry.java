@@ -143,7 +143,7 @@ public class QuestRegistry {
 
                 QuestRequirement questRequirement = new QuestRequirement(holdingItemRequirementMap, inventoryRequirementMap, partyRequirementMap, permissionRequirement, progressRequirement, timeRequirement, weatherRequirement);
 
-                Quest quest = new Quest(amountRequired, completionCommands, progressUpdate, display, event, targetID, targetLocation, trigger, questRequirement);
+                Quest quest = new Quest(questName, amountRequired, completionCommands, progressUpdate, display, event, targetID, targetLocation, trigger, questRequirement);
                 questList.add(quest);
 
             }
